@@ -1,0 +1,10 @@
+{
+    "project_name": "Lendico Pay",
+    "project_folder": "cdc-manager",
+    "project_description": "Credito Direto ao Consumidor",
+    "directory_name": "cdc",
+    "swagger_title": "CDC API",
+    "swagger_doc_name": "CDC API",
+    "swagger_description": "CDC E-commerce endpoints",
+    "health_message": "Lendico CDC API HealthCheck"
+}
