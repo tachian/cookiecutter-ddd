@@ -22,7 +22,7 @@ db = SQLAlchemy()
 def create_app(deploy_env: str = ENV) -> Flask:
     app = Flask(__name__)
     CORS(app)
-    app.config.from_object(f'{{cookiecutter.directory_name}}.config.{deploy_env}Config')
+    app.config.from_object(f'{{cookiecutter.project_folder}}.config.{deploy_env}Config')
 
     __register_blueprints_and_error_handling(app)
     __configure_logger(app)
@@ -37,7 +37,7 @@ def create_app(deploy_env: str = ENV) -> Flask:
 
 
 def __register_blueprints_and_error_handling(app: Flask):
-    from {{cookiecutter.directory_name}}.presentation_layer.views.api import blueprint
+    from {{cookiecutter.project_folder}}.presentation_layer.views.api import blueprint
 
     app.register_blueprint(blueprint)
 
@@ -59,7 +59,7 @@ def __configure_logger(app: Flask):
 
 
 def __register_commands(app):
-    from {{cookiecutter.directory_name}}.commands import drop_create_tables
+    from {{cookiecutter.project_folder}}.commands import drop_create_tables
 
     app.cli.command("drop-create-tables")(drop_create_tables)
 

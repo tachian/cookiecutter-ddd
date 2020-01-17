@@ -1,5 +1,5 @@
 from flask.cli import with_appcontext
-from {{cookiecutter.directory_name}}.app import db
+from {{cookiecutter.project_folder}}.app import db
 
 
 @with_appcontext

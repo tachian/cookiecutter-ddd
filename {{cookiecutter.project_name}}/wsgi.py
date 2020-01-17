@@ -1,4 +1,4 @@
-from {{cookiecutter.directory_name}}.app import create_app, db
+from {{cookiecutter.project_folder}}.app import create_app, db
 
 app = create_app()
 with app.app_context():

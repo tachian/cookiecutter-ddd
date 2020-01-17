@@ -1,10 +1,10 @@
 {
-    "project_name": "Lendico Pay",
-    "project_folder": "cdc-manager",
-    "project_description": "Credito Direto ao Consumidor",
-    "directory_name": "cdc",
-    "swagger_title": "CDC API",
-    "swagger_doc_name": "CDC API",
-    "swagger_description": "CDC E-commerce endpoints",
-    "health_message": "Lendico CDC API HealthCheck"
+    "project_name": "my-hello-world",
+    "project_folder": "helloworld",
+    "project_description": "My hello world project",
+    "swagger_title": "Hello World API",
+    "swagger_doc_name": "{{cookiecutter.swagger_title}}",
+    "swagger_description": "{{cookiecutter.swagger_title}} endpoints",
+    "health_message": "{{cookiecutter.project_name}} API HealthCheck",
+    "database": ["Postgres", "MySQL"]
 }

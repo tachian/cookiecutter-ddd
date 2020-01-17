@@ -9,4 +9,8 @@ flask-restplus==0.12.1
 Flask-SQLAlchemy==2.4.0
 Flask-HTTPAuth==3.3.0
 json-logging==1.0.5
+{% if cookiecutter.database|lower == 'mysql' -%}
+MySQL-python==1.2.5
+{% else %}
 psycopg2==2.8.3
+{% endif %}
